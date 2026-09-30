@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&q=80" alt="Fitness" class="img-main">
+            <div class="img-row">
+                <img src="https://images.unsplash.com/photo-149883716733f-565d6c8b8c73?w=500&q=80" alt="Healthy Food">
+                <img src="https://images.unsplash.com/photo-1611077544789-7eb0e316d9bc?w=500&q=80" alt="Measurement">
+            </div>
+        </div>
+        
+        <div class="calculator-section">
+            <h1>BMI Calculator</h1>
+            <p>Check your body mass index</p>
+            
+            <div class="input-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" placeholder="e.g. 70">
+            </div>
+            
+            <div class="input-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" placeholder="e.g. 175">
+            </div>
+            
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            
+            <div id="error-msg" class="hidden">Please enter valid positive numbers.</div>
+            
+            <div id="result" class="hidden">
+                <h2 id="bmi-value"></h2>
+                <p id="bmi-category"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
